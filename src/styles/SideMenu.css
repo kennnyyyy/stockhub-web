@@ -1,0 +1,30 @@
+/* SideMenu.css */
+
+.sidemenu{
+    border: 2px solid yellow;
+}
+.bm-menu {
+  background: #010536;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+  /* Other styling if needed */
+}
+
+.bm-item {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  margin: 0.5em 0;
+}
+
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  left: 20px; /* Position the button on the left */
+  top: 20px;
+}
+
+.bm-burger-bars {
+  background: #f8f801;
+}
