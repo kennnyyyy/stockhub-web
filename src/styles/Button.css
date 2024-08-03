@@ -1,0 +1,16 @@
+/* src/styles/Button.css */
+.btn {
+    background-color: #f8f801; /* Button background color */
+    color: #010536; /* Button text color */
+    border: none; /* Remove default border */
+    padding: 10px 20px; /* Add padding */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .btn:hover {
+    background-color: #e7e700; /* Slightly darker background on hover */
+  }
+  
