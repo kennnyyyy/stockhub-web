@@ -1,22 +1,94 @@
 .inventory {
-    padding: 20px;
-    background-color: #f8f9fa;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  background-color: #010536; /* Updated background color */
+  color: white; /* Set text color to white */
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative; /* Positioning context for logo */
+}
+
+.logo-container {
+  margin-bottom: 20px; /* Space between logo and heading */
+}
+
+.logo {
+  max-width: 200px; /* Size of the logo */
+  height: auto;
+}
+
+.inventory h1 {
+  font-size: 24px;
+  color: white; /* Set heading color to white */
+  margin-bottom: 20px;
+}
+
+.actions-controls {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Space between buttons */
+}
+
+.action-button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.action-button img {
+  width: 40px; /* Size of icons */
+  height: 40px;
+}
+
+.inventory-list {
+  margin-top: 20px;
+}
+
+.inventory-list table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.inventory-list table,
+.inventory-list th,
+.inventory-list td {
+  border: 1px solid #dee2e6;
+}
+
+.inventory-list th,
+.inventory-list td {
+  padding: 10px;
+  text-align: left;
+  color: white; /* Set table text color to white */
+}
+
+.inventory-list th {
+  background-color: #002b59; /* Darker background for headers for better contrast */
+}
+
+.inventory-list td button {
+  margin-right: 5px;
+  padding: 5px 10px;
+}
+
+@media (max-width: 600px) {
+  .inventory {
+    padding: 10px;
   }
-  
+
+  .logo {
+    max-width: 150px; /* Adjust size for smaller screens */
+  }
+
   .inventory h1 {
-    font-size: 24px;
-    color: #343a40;
+    font-size: 20px;
   }
-  
-  @media (max-width: 600px) {
-    .inventory {
-      padding: 10px;
-    }
-  
-    .inventory h1 {
-      font-size: 20px;
-    }
+
+  .inventory-list table,
+  .inventory-list th,
+  .inventory-list td {
+    font-size: 14px;
   }
-  
+}

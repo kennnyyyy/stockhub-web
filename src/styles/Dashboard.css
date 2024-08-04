@@ -3,6 +3,7 @@
     height: 100vh;
     overflow: hidden;
     border: 2px solid red;
+    background-color: #f6dca9;
   }
   
   .side-menu {

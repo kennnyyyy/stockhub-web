@@ -4,6 +4,7 @@ import Sales from './Sales';
 import Reports from './Reports';
 import Settings from './Settings';
 import '../styles/Content.css';  // Ensure correct path to CSS
+import Summary from './Summary';
 
 function Content({ isMenuOpen, activeSection, closeMenu }) {
   const renderContent = () => {
@@ -17,7 +18,7 @@ function Content({ isMenuOpen, activeSection, closeMenu }) {
       case 'settings':
         return <Settings />;
       default:
-        return <h1>Main Content</h1>;
+        return <Summary />;
     }
   };
 
