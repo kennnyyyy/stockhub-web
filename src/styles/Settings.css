@@ -1,0 +1,22 @@
+.settings {
+    padding: 20px;
+    background-color: #ced4da;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .settings h1 {
+    font-size: 24px;
+    color: #6c757d;
+  }
+  
+  @media (max-width: 600px) {
+    .settings {
+      padding: 10px;
+    }
+  
+    .settings h1 {
+      font-size: 20px;
+    }
+  }
+  

@@ -1,7 +1,18 @@
 .content {
-    flex: 1;  /* Takes up remaining space */
-    margin-left: 250px;  /* Adjust this to match the width of your side menu */
-    transition: margin-left 0.3s ease; /* Smooth transition when the menu opens/closes */
-    border: 2px solid cyan;  /* Add a 2px solid cyan border */
+  padding: 20px;
+  transition: margin-left 0.3s;
+}
+
+.content-open {
+  margin-left: 250px;
+}
+
+.content-closed {
+  margin-left: 0;
+}
+
+@media (max-width: 600px) {
+  .content {
+    padding: 10px;
   }
-  
+}

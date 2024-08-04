@@ -1,0 +1,22 @@
+.inventory {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .inventory h1 {
+    font-size: 24px;
+    color: #343a40;
+  }
+  
+  @media (max-width: 600px) {
+    .inventory {
+      padding: 10px;
+    }
+  
+    .inventory h1 {
+      font-size: 20px;
+    }
+  }
+  
