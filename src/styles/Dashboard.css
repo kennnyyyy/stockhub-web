@@ -2,8 +2,7 @@
     display: flex;
     height: 100vh;
     overflow: hidden;
-    border: 2px solid red;
-    background-color: #f6dca9;
+    background-color: #002b59;
   }
   
   .side-menu {
@@ -15,13 +14,4 @@
     transition: margin-left 0.3s ease; /* Smooth transition */
   }
   
-  /* When the menu is open, adjust the margin */
-  .content-open {
-    margin-left: 250px; /* Same width as side menu */
-  }
-  
-  /* When the menu is closed, the content takes full width */
-  .content-closed {
-    margin-left: 70px;
-  }
   
