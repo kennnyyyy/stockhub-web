@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import '../styles/Inventory.css';
 import logo from '../assets/images/logo-transparent-icon-and-text.png';
+import addLogo from '../assets/images/icon-add.png';
+import editLogo from '../assets/images/icon-edit.png';
 import ItemModal from './ItemModal';
 
 function Inventory() {
@@ -74,10 +76,10 @@ function Inventory() {
       {/* Actions */}
       <div className="actions-controls">
         <button onClick={openAddModal} className="action-button">
-          <img src="https://img.icons8.com/?size=100&id=cAd29bV1wGyF&format=png&color=000000" alt="Add Item" />
+          <img src={addLogo} alt="Add Item" />
         </button>
         <button onClick={() => openEditModal(modalItem)} className="action-button">
-          <img src="https://img.icons8.com/?size=100&id=tKvnEzfDG1hI&format=png&color=000000" alt="Edit Item" />
+          <img src={editLogo} alt="Edit Item" />
         </button>
         <button onClick={() => openDeleteModal(modalItem)} className="action-button">
           <img src="https://img.icons8.com/?size=100&id=00Qr877pFzQp&format=png&color=000000" alt="Delete Item" />

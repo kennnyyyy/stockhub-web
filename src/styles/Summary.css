@@ -1,22 +1,73 @@
 .summary {
     padding: 20px;
-    background-color: #f8f9fa;
+    background-color: #010536; /* Matching the Inventory page */
+    color: white; /* Set text color to white */
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
   }
   
   .summary h1 {
     font-size: 24px;
-    color: #343a40;
+    margin-bottom: 20px;
+  }
+  
+  .summary-columns {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .summary-column {
+    width: 48%; /* Two columns with some space between */
+  }
+  
+  .summary-item {
+    background-color: #002b59; /* Darker background for items */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+  
+  .summary-item h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .summary-item p, .summary-item ul {
+    font-size: 16px;
+  }
+  
+  .summary-item ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .summary-item li {
+    margin-bottom: 5px;
+  }
+  
+  .summary-subitem {
+    margin-bottom: 15px; /* Space between subitems */
+  }
+  
+  .summary-subitem h3 {
+    display: inline;
+    font-size: 16px;
+    margin-right: 5px; /* Space between title and value */
+  }
+  
+  .summary-subitem p {
+    display: inline;
+    font-size: 16px;
   }
   
   @media (max-width: 600px) {
-    .summary {
-      padding: 10px;
+    .summary-columns {
+      flex-direction: column;
     }
   
-    .summary h1 {
-      font-size: 20px;
+    .summary-column {
+      width: 100%;
     }
   }
   
