@@ -12,7 +12,7 @@ function LandingPage() {
       <div className="form-container">
         {isLogin ? <LoginForm /> : <RegisterForm />}
         <button className="toggle-btn" onClick={() => setIsLogin(!isLogin)}>
-          {isLogin ? 'Need an account? Register' : 'Already have an account? Login'}
+          {isLogin ? 'TEST Need an account? Register' : 'Already have an account? Login'}
         </button>
       </div>
     </div>
