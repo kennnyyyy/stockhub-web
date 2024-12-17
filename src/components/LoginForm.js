@@ -13,6 +13,11 @@ function LoginForm() {
     navigate('/dashboard');
   };
 
+  const handleForm = (event) => {
+    event.preventDefault();
+    navigate('/form');
+  };
+
   return (
     <form className="form" onSubmit={handleLogin}>
       <img src={logo} alt="Logo" className="logo" />
@@ -20,6 +25,9 @@ function LoginForm() {
       <input type="email" placeholder="Email" required />
       <input type="password" placeholder="Password" required />
       <Button type="submit">Login</Button>
+
+      {/* Contact Us Button */}
+      <Button type="button" onClick={handleForm}>Contact Us</Button>
     </form>
   );
 }
